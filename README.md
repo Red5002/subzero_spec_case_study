@@ -55,3 +55,12 @@ To view or edit this project locally:
 1. Clone the repository:
    ```bash
    git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
+	 
+2. ​Open index.html in your browser or through a live server extension in your editor.
+
+3. 
+​👤 Author
+​Emmanuel Elijah Amujo
+Full-Stack Developer & Technical/B2C Copywriter
+​Portfolio: elijah.dev
+​LinkedIn: linkedin.com/in/your-profile
