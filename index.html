@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubZero | Subscription Management</title>
+    <meta name="description" content="Find forgotten subscriptions and stop the leaks with SubZero.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .bg-subzero-dark {
+            background-color: #0a0a0a;
+        }
+        .bg-subzero-card {
+            background-color: #0d0d0d;
+        }
+        .glow-overlay {
+            background: radial-gradient(circle at center, rgba(255,255,255,0.03) 0%, transparent 70%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- SPEC PORTFOLIO BANNER -->
+<div class="bg-zinc-900/90 border-b border-white/10 py-2.5 px-6 text-xs text-gray-400">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+        <span class="inline-flex items-center gap-2 font-mono text-[11px] tracking-wider text-gray-300">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            SPEC CASE STUDY • B2C COPYWRITING & UX
+        </span>
+        <a href="index.html" class="text-xs text-white hover:underline font-medium flex items-center gap-1">
+            ← Back to Portfolio
+        </a>
+    </div>
+</div>
+
+<!-- STICKY SAAS NAV BAR -->
+<nav class="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+    <div class="max-w-4xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-8">
+            <a href="#" class="text-xl font-bold text-white tracking-tighter flex items-center gap-2">
+                <span class="w-3 h-3 bg-white rounded-sm"></span> SUBZERO
+            </a>
+            <!-- Desktop Anchor Links -->
+            <div class="hidden md:flex items-center gap-6 text-xs text-gray-400 font-medium">
+                <a href="#problem" class="hover:text-white transition-colors">The Problem</a>
+                <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
+                <a href="#experience" class="hover:text-white transition-colors">Email & UX</a>
+                <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="#" class="text-xs text-gray-400 hover:text-white hidden sm:block font-medium">Sign In</a>
+            <a href="#" class="bg-white text-black text-xs px-4 py-2 font-semibold rounded-sm hover:bg-gray-200 transition-all">
+                Scan Account
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- SECTION 1: HERO -->
+    <header class="relative overflow-hidden pt-20 pb-24 md:pt-32 md:pb-40 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="space-y-8">
+                <p id="hero-eyebrow" class="text-xs uppercase tracking-[0.3em] text-gray-500 font-semibold">
+                    SUBSCRIPTION MANAGEMENT
+                </p>
+                <h1 id="hero-headline" class="text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.1]">
+                    Stop paying for apps you forgot existed.
+                </h1>
+                <p id="hero-subcopy" class="text-xl text-gray-400 max-w-2xl leading-relaxed">
+                    SubZero finds forgotten subscriptions, catches unexpected price increases, and helps you cancel unwanted charges—without the usual support-call headache.
+                </p>
+                <div id="hero-cta-container" class="flex flex-col items-start gap-4 pt-4">
+                    <a href="#" class="bg-white text-black px-8 py-4 font-semibold hover:bg-gray-200 transition-all rounded-sm text-center w-full sm:w-auto">
+                        Find my hidden subscriptions
+                    </a>
+                    <p id="hero-risk-reverser" class="text-sm text-gray-500 italic px-1">
+                        No credit card required to scan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 2: PROBLEM / AGITATION -->
+    <section class="py-24 px-6 border-t border-white/10">
+        <div class="max-w-4xl mx-auto">
+            <div class="mb-16 space-y-6">
+                <h2 id="agitation-headline" class="text-3xl md:text-5xl font-medium text-white leading-tight">
+                    Subscribing takes 5 seconds. Canceling takes 15 minutes of digging through hidden settings.
+                </h2>
+                <p id="agitation-lead" class="text-lg text-gray-400">
+                    Software companies know that if they make cancellation annoying enough, you’ll procrastinate on doing it. A few dollars here and there doesn't feel urgent—until you add up six months of quiet monthly charges for tools you haven't opened once.
+                </p>
+            </div>
+
+            <!-- 3 Cards Grid -->
+            <div id="agitation-grid" class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="border border-white/10 p-6 rounded-lg bg-[#0d0d0d] flex flex-col space-y-4">
+                    <h3 class="text-lg font-semibold text-white">The "I’ll Just Try It" Free Trial</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        You signed up for a 7-day trial to finish one project, forgot to set a reminder, and ended up paying for the entire year.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="border border-white/10 p-6 rounded-lg bg-[#0d0d0d] flex flex-col space-y-4">
+                    <h3 class="text-lg font-semibold text-white">The Stealth Price Hike</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        That $9/month tool quietly bumped its price to $14/month. No heads-up, no email notification—just a larger charge hitting your statement every 30 days.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="border border-white/10 p-6 rounded-lg bg-[#0d0d0d] flex flex-col space-y-4">
+                    <h3 class="text-lg font-semibold text-white">The Cancellation Dark Pattern</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Hidden buttons, multi-page exit surveys, and mandatory phone calls are engineered to make you give up before you hit "confirm."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Strategic Bridge -->
+            <div id="strategic-bridge" class="mt-20 text-center">
+                <div class="inline-block p-8 border border-white/10 rounded-lg bg-[#0d0d0d]/50">
+                    <blockquote class="text-xl italic text-gray-300 max-w-2xl mx-auto">
+                        "You don't need a complex budgeting app with 50 pie charts. You just need a tool that flags the leaks and helps you stop them."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: HOW IT WORKS -->
+    <section id="how-it-works" class="py-24 px-6 border-t border-white/10">
+        <div class="max-w-4xl mx-auto">
+            <div id="how-it-works-header" class="mb-16">
+                <p class="text-xs uppercase tracking-[0.3em] text-gray-500 font-semibold mb-6">
+                    HOW SUBZERO WORKS
+                </p>
+                <h2 class="text-3xl md:text-5xl font-medium text-white mb-4">
+                    From hidden leak to canceled charge in under two minutes.
+                </h2>
+                <p class="text-lg text-gray-400">
+                    No spreadsheets. No manually typing in transaction names. SubZero automates the detection so you only have to make one decision: keep it or kill it.
+                </p>
+            </div>
+
+            <div id="how-it-works-grid" class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="border border-white/10 p-6 rounded-lg bg-[#0d0d0d] flex flex-col h-full">
+                    <span class="text-3xl font-bold text-gray-600 mb-6">01</span>
+                    <h3 class="text-lg font-semibold text-white mb-3">Connect in 30 Seconds</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Link your bank feed or upload a statement using read-only, bank-level 256-bit encryption. SubZero never sees your credentials or touches your funds.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="border border-white/10 p-6 rounded-lg bg-[#0d0d0d] flex flex-col h-full">
+                    <span class="text-3xl font-bold text-gray-600 mb-6">02</span>
+                    <h3 class="text-lg font-semibold text-white mb-3">Spot Every Silent Leak</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Our scanner instantly isolates recurring charges, groups them by service, and highlights stealth price hikes and ending free trials you might have missed.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="border border-white/10 p-6 rounded-lg bg-[#0d0d0d] flex flex-col h-full">
+                    <span class="text-3xl font-bold text-gray-600 mb-6">03</span>
+                    <h3 class="text-lg font-semibold text-white mb-3">Cancel Without the Headaches</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Select any unwanted subscription and hit "Cancel." SubZero routes through automated cancellation channels or gives you direct, single-click bypass links to skip customer support traps.
+                    </p>
+                </div>
+            </div>
+
+            <p id="reassurance-note" class="text-xs text-gray-500 uppercase tracking-widest text-center mt-12">
+                100% read-only access. SubZero cannot move money, make purchases, or alter your bank account.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 4: SPEC EMAIL & UX MICROCOPY SHOWCASE -->
+    <section id="experience-showcase" class="py-24 px-6 border-t border-white/10">
+        <div class="max-w-4xl mx-auto">
+            <div id="showcase-header" class="mb-16">
+                <p class="text-xs uppercase tracking-[0.3em] text-gray-500 font-semibold mb-6">
+                    THE FULL EXPERIENCE
+                </p>
+                <h2 class="text-3xl md:text-5xl font-medium text-white mb-4">
+                    Copy that works long after the sign-up.
+                </h2>
+                <p class="text-lg text-gray-400">
+                    High-converting landing pages bring users through the door. Clear onboarding emails and intuitive product microcopy keep them active and engaged.
+                </p>
+            </div>
+
+            <div id="showcase-grid" class="grid md:grid-cols-2 gap-8">
+                <!-- Column 1: Lifecycle Email Preview Box -->
+                <div id="email-preview" class="flex flex-col">
+                    <span class="text-[10px] uppercase tracking-widest text-gray-400 bg-white/5 border border-white/10 px-3 py-1 rounded-full w-max mb-4">
+                        SPEC EMAIL • AUTOMATED TRIGGER
+                    </span>
+                    <div class="bg-[#111111] border border-white/10 p-6 rounded-lg text-sm text-gray-300 space-y-4 font-sans h-full">
+                        <div class="border-b border-white/5 pb-4 space-y-1">
+                            <p class="text-gray-500 text-xs">Subject:</p>
+                            <h4 class="font-bold text-white">We found $47/month in hidden charges on your account.</h4>
+                        </div>
+                        <div class="pt-2 space-y-4">
+                            <p>Hi Alex,</p>
+                            <p>
+                                Our weekly scan just finished. We flagged three recurring charges that look like "zombie" subscriptions—including a <strong>$29.00/mo</strong> charge for DesignApp Pro that you haven't opened in 64 days.
+                            </p>
+                            <p>
+                                We also caught a <strong>$12/mo price hike</strong> on your cloud storage that went into effect this morning.
+                            </p>
+                            <p>Want us to handle these for you?</p>
+                            <a href="#" class="bg-white text-black px-4 py-2 font-semibold text-xs rounded mt-4 block text-center transition-hover hover:bg-gray-200">
+                                Review & Cancel My Subscriptions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: UX Microcopy / In-App Samples -->
+                <div id="microcopy-column" class="flex flex-col gap-8">
+                    <!-- Sub-card A: Cancellation Modal -->
+                    <div id="modal-microcopy" class="bg-[#111111] border border-white/10 p-6 rounded-lg space-y-4">
+                         <span class="text-[10px] uppercase tracking-widest text-gray-400 bg-white/5 border border-white/10 px-3 py-1 rounded-full w-max">
+                            UX MICROCOPY • CANCELLATION MODAL
+                        </span>
+                        <div class="space-y-2">
+                            <h4 class="text-base font-bold text-white">Cancel DesignApp Pro ($29/mo)?</h4>
+                            <p class="text-xs text-gray-400 leading-relaxed">
+                                We will route this cancellation directly through DesignApp's automated API. You will retain access until Oct 14th.
+                            </p>
+                        </div>
+                        <button class="w-full bg-red-500/20 text-red-400 border border-red-500/30 px-3 py-2 text-xs font-semibold rounded block transition-all hover:bg-red-500/30">
+                            Yes, cancel this subscription
+                        </button>
+                    </div>
+
+                    <!-- Sub-card B: Success State -->
+                    <div id="success-microcopy" class="bg-[#111111] border border-white/10 p-6 rounded-lg space-y-4">
+                        <span class="text-[10px] uppercase tracking-widest text-gray-400 bg-white/5 border border-white/10 px-3 py-1 rounded-full w-max">
+                            UX MICROCOPY • SUCCESS STATE
+                        </span>
+                        <div class="space-y-2">
+                            <h4 class="text-base font-bold text-green-400 flex items-center gap-2">
+                                <img src="https://api.iconify.design/heroicons:check-circle-20-solid.svg?color=%234ade80" class="w-4 h-4" />
+                                Cancellation Submitted!
+                            </h4>
+                            <p class="text-xs text-gray-400 leading-relaxed">
+                                Done. We've queued your cancellation and stopped the next $29 billing cycle. Total money saved this year: $348.00.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FINAL CTA -->
+    <section id="final-cta" class="py-24 px-6 border-t border-white/10">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-[#0d0d0d] p-10 md:p-16 rounded-xl border border-white/15 text-center relative overflow-hidden">
+                <!-- Subtle Glow effect -->
+                <div class="absolute inset-0 glow-overlay"></div>
+                
+                <div class="relative z-10">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+                        Stop leaking cash on subscriptions you don't use.
+                    </h2>
+                    <p class="text-base md:text-lg text-gray-400 max-w-xl mx-auto mb-8">
+                        Scan your accounts in under 30 seconds. See exactly where your money is going before the next billing cycle hits.
+                    </p>
+                    
+                    <div class="flex flex-col items-center">
+                        <a href="#" class="bg-white text-black px-8 py-4 font-semibold hover:bg-gray-200 transition-all rounded-sm inline-block w-full sm:w-auto">
+                            Find my hidden subscriptions
+                        </a>
+                        <span class="text-xs text-gray-500 italic mt-4 block">
+                            No credit card required to scan.
+                        </span>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="flex flex-row flex-wrap justify-center items-center gap-6 mt-10 border-t border-white/5 pt-6 text-xs text-gray-500">
+                        <span class="flex items-center gap-1.5 whitespace-nowrap">🔒 256-bit Encryption</span>
+                        <span class="flex items-center gap-1.5 whitespace-nowrap">👁️ 100% Read-Only Access</span>
+                        <span class="flex items-center gap-1.5 whitespace-nowrap">⚡ Setup in 30 Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer (Minimalist & Portfolio-Attributed) -->
+<footer class="py-12 border-t border-white/10 bg-[#070707]">
+    <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+        <!-- Brand & Portfolio Credit -->
+        <div class="space-y-2 text-center md:text-left">
+            <div class="flex items-center justify-center md:justify-start gap-2">
+                <span class="w-2.5 h-2.5 bg-white rounded-sm"></span>
+                <span class="text-sm font-bold text-white tracking-tight">SUBZERO</span>
+            </div>
+            <p class="text-xs text-gray-500">
+                Concept Copywriting & UX Design • Spec Project for <a href="index.html" class="text-gray-400 hover:text-white underline font-medium">Portfolio</a>
+            </p>
+        </div>
+
+        <!-- In-Page Anchor Links -->
+        <div class="flex flex-wrap justify-center items-center gap-6 text-xs text-gray-500">
+            <a href="#problem" class="hover:text-white transition-colors">The Problem</a>
+            <a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a>
+            <a href="#experience" class="hover:text-white transition-colors">Email & UX</a>
+            <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+            <a href="index.html" class="text-white hover:underline font-medium">← Back to Main Site</a>
+        </div>
+    </div>
+
+    <!-- Bottom Legal Bar -->
+    <div class="max-w-4xl mx-auto px-6 mt-8 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-gray-600">
+        <p>&copy; 2026 SubZero (Spec Case Study). All rights reserved.</p>
+        <div class="flex space-x-4">
+            <a href="#" class="hover:text-gray-400">Privacy Policy</a>
+            <a href="#" class="hover:text-gray-400">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
